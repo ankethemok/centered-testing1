@@ -34,9 +34,9 @@
  
   div.me-image {
     position: relative;
-    height: 100px;
-    top: 150px;
     opacity: 0.75;
+    margin-top: 130px;
+    height: 0px;
   }
   
   div.site-title {
@@ -44,8 +44,9 @@
     font-weight: 400;
     position: relative;
     text-align: center;
-    top: -30px;
+    top: -80px;
     font-size: 150px;
+    height: 750px;
   }
   
   
@@ -65,24 +66,28 @@
   padding: 20px;
   }
   
-  
   footer {
   font-family: "Inter", serif;
   font-weight: 400;
   text-align: left;
   font-size: 20px;
   padding: 20px;
+    break-after: always;
   }
   
   nav {
   font-size: 20px;
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: rgba(250, 249, 247, 1);
   padding-bottom: 10px;
-  border-bottom: 0.5px solid rgba(250, 249, 247, 0.5);}
+  padding-top: 10px;
+  border-bottom: 0.5px solid rgba(250, 249, 247, 0.5);
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  }
   
   ul {
   list-style-type: none;
@@ -114,9 +119,8 @@
   }
   
   img {
-  position: relative;
     width: 100%;
-    top: 0px;
+      border-radius: 25px;
   }
   
  .fade:hover {
@@ -130,22 +134,27 @@
   grid-template-columns: auto auto auto;
   background-color: black;
   padding: 15px;
-    
+  
   }
   .container div {
   background-color: white;
-  width: 425px;
-  height: 500px;
-  margin: 20px;
+  width: auto;
+  height: auto;
+  margin: 15px;
   position: relative;
   text-align: center;
+  border-radius: 30px;
   }
+  
+  
   
 </style>
 </head>
+  
+  
 <body>
 
-<nav>
+  <nav>
 <ul>
 <li><a href="/">Home</a></li>
 <li><a href="/">About Me</a></li>
@@ -154,42 +163,52 @@
 </nav>
   
 <div class="intro">
-  <div class="me-image"><img src="IMG_3268.JPG" alt="Me!"></div>
+  <div class="me-image">
+    <img src="IMG_3268.JPG" alt="Me!">
+  </div>
+  
   <div class="site-title">ANKE MOK</div>
   
   <h2>  
-    Explore My Work
+    Explore My Portfolio
   </h2>
+   </div>
   
+  
+ 
+  <div>
   <h1>
     About Me
   </h1>
-
-  </div>
   
 <p>
   I am a student majoring in Global Business and Digital Arts at the University of Waterloo. Creating things that are both functional and pleasing to the eye is the foundation of my designs. I am passionate about exploring the psychology behind design, how I can curate my designs to be the most captivating. At my most recent job, I was a Social Media Manager and Photographer for EastRidge Church, where I built a lot of skills in video editing and social media marketing. I’m interested in bringing my design skills into brand design.
   </p>
   
+    </div>
   
+ 
   
  
   <div class="container">
     <div>
-<img src="Firefly_Create mockups_mels.png" alt="Mel's Diner Rebranding" class="fade">
-<h2>Rebranding</h2>
-<p>Mel's Diner</p>
+<img src="mels-rebranding-mockup.jpg" alt="Mel's Diner Rebranding" class="fade">
+    <div style="color:rgb(0, 0, 0);">
+      <h2>Rebranding</h2>
+      <p>Mel's Diner</p>
+    </div>
+
     </div>
     
     <div>
-<img src="cat-cafe-website-redesign_making-an-impact.png" alt="Alley Cat Cafe Website Redesign" class="fade">   
+<img src="alley-cat-web-redesign.jpg" alt="Alley Cat Cafe Website Redesign" class="fade">   
 <h2>Website Redesign</h2>
 <p>Alley Cat Cafe</p>
     </div>
     
   <div>
 
-<img src="littlejoysloading.png" alt="Little Joys App" class="fade">
+<img src="app-littlejoys.jpg" alt="Little Joys App" class="fade">
 <h2>App Idea</h2>
 <p>Little Joys</p>
     </div>
