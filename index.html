@@ -18,10 +18,11 @@
   font-family: "Inter";
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
   font-variation-settings: "wdth" 200;
   width: 1200px;
   padding: 20px;
+  background-color: black;
+  color: #faf9f7;
 }
   
   nav {
@@ -29,6 +30,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+   color: #faf9f7;
     
   }
    
@@ -37,35 +39,52 @@
   font-weight: 400;
   text-align: center;
   font-size: 100px;
-  color: "#faf9f7";
   padding: 20px;
   }
+
   
-  #site-title {
-  text-align: center;
-    font-size: 150px;  
-    margin: 0;
+  .bro {
+  position: relative;
+}
+  
+  .me-image {
+    position: relative;
+  height: 100px;
+  margin: 30px;
   }
+  
+  .site-title {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    text-align: center;
+    font-size: 150px;
+  }
+  
   
   h2 {
   font-family: "Inter", serif;
   font-weight: 400;
   text-align: center;
   font-size: 30px;
-  color: "#faf9f7";
+  padding: 20px;
+  }
+  
+  p {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 20px;
   padding: 20px;
   }
   
   
-  
-  
-  p {
-    position: absolute;
-      top: 72%;
-
-  }
-  
   footer {
+    font-family: "Inter", serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
   }
   
   ul {
@@ -73,6 +92,11 @@
   margin: 0;
   padding: 0;
   align-content: center;
+  }
+  
+  a {
+    color: #faf9f7;
+    text-decoration: none;
   }
   
   ul li {
@@ -84,14 +108,20 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: #07111f;
+  color: #faf9f7;
   }
   
   ul li a:hover {
-  background-color: #c8d4e6;
+  color: #c8d4e6;
   }
   
   img {
+  position: relative;
+    width: 100%;
+    top: 0px;
+  }
+  
+   #img-for-container {
   width: 100%;
   position: absolute;
       top: 0px;
@@ -100,7 +130,7 @@
   
   .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   background-color: #7896bf;
   padding: 15px;
     
@@ -129,9 +159,13 @@
   <h1 id="site-title">
     ANKE MOK
   </h1>
-  <p>
-  My Work
-  </p>
+  
+  <img src="IMG_3268.JPG" alt="Me!">
+       
+  
+  <h2>  
+    Explore My Work
+  </h2>
   
   <h1>
     About Me
