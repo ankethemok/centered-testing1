@@ -12,7 +12,6 @@
 
   div {
   width: 1200px;
-  margin: auto;
 }  
   body {
   font-family: "Inter";
@@ -24,15 +23,6 @@
   background-color: black;
   color: rgba(250, 249, 247, 1);
 }
-  
-  nav {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: rgba(250, 249, 247, 1);
-  padding-bottom: 10px;
-  border-bottom: 0.5px solid rgba(250, 249, 247, 0.5);}
    
   h1 {
   font-family: "Kalnia", serif;
@@ -41,19 +31,15 @@
   font-size: 100px;
   padding: 20px;
   }
-  
-  .headercontainer {
-  position: relative;
-}
-  
-  .me-image {
+ 
+  div.me-image {
     position: relative;
     height: 100px;
     top: 150px;
     opacity: 0.75;
   }
   
-  .site-title {
+  div.site-title {
     font-family: "Kalnia", serif;
     font-weight: 400;
     position: relative;
@@ -81,12 +67,22 @@
   
   
   footer {
-    font-family: "Inter", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   text-align: left;
   font-size: 20px;
   padding: 20px;
   }
+  
+  nav {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(250, 249, 247, 1);
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid rgba(250, 249, 247, 0.5);}
   
   ul {
   list-style-type: none;
@@ -107,13 +103,14 @@
   ul li a {
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 26px;
   text-decoration: none;
   color: rgba(250, 249, 247, 1);
   }
   
   ul li a:hover {
   color: rgba(250, 249, 247, 0.7);
+  transition-duration: 0.2s;
   }
   
   img {
@@ -122,6 +119,10 @@
     top: 0px;
   }
   
+ .fade:hover {
+  opacity: 0.5;
+  transition-duration: 0.2s;
+  }
   
   
   .container {
@@ -152,11 +153,14 @@
 </ul>
 </nav>
   
-  <div class="headercontainer">
-<div class="me-image"><img src="IMG_3268.JPG" alt="Me!"></div>
-<div class="site-title">ANKE MOK</div>
-</div>
+<div>
+  <div class="me-image"><img src="IMG_3268.JPG" alt="Me!"></div>
+  <div class="site-title">ANKE MOK</div>
+</div>  
   
+<div 
+style="margin-top: 50%"
+>
   <h2>  
     Explore My Work
   </h2>
@@ -164,40 +168,49 @@
   <h1>
     About Me
   </h1>
+</div>
+  
 <p>
   I am a student majoring in Global Business and Digital Arts at the University of Waterloo. Creating things that are both functional and pleasing to the eye is the foundation of my designs. I am passionate about exploring the psychology behind design, how I can curate my designs to be the most captivating. At my most recent job, I was a Social Media Manager and Photographer for EastRidge Church, where I built a lot of skills in video editing and social media marketing. I’m interested in bringing my design skills into brand design.
   </p>
   
+  
+  
  
   <div class="container">
     <div>
-<img src="banh-mi.jpg" alt="bahn-mi">
-<h2>Classic Pork Banh Mi</h2>
-<p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
+<img src="Firefly_Create mockups_mels.png" alt="Mel's Diner Rebranding" class="fade">
+<h2>Rebranding</h2>
+<p>Mel's Diner</p>
     </div>
     
     <div>
-<img src="banh-mi.jpg" alt="bahn-mi">   
-<h2>Lemongrass Chicken Banh Mi</h2>
-<p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
+<img src="cat-cafe-website-redesign_making-an-impact.png" alt="Alley Cat Cafe Website Redesign" class="fade">   
+<h2>Website Redesign</h2>
+<p>Alley Cat Cafe</p>
     </div>
     
   <div>
 
-<img src="banh-mi.jpg" alt="bahn-mi">
-<h2>Tofu Banh Mi</h2>
-<p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
+<img src="littlejoysloading.png" alt="Little Joys App" class="fade">
+<h2>App Idea</h2>
+<p>Little Joys</p>
     </div>
     
-    <div>
-<img src="banh-mi.jpg" alt="bahn-mi">
-<h2>Five-Spice Beef Banh Mi</h2>
-<p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
-<footer>Because life's too short for boring sandwiches. Greg's got you covered—one crispy baguette at a time.</footer>
-  
-    </div>
 </div>
 
+<div>
+  <footer>
+<ul>
+<li><a href="/">Let's connect:</a></li>
+<li><a href="/">ankekmok@gmail.com</a></li>
+<li><a href="/">647-465-9939</a></li>
+</ul>
+</footer>
+  </div>
+  
+  
+  
 </body>
   
   
