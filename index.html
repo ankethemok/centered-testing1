@@ -17,7 +17,6 @@
   font-family: "Inter";
   font-optical-sizing: auto;
   font-weight: 400;
-  font-variation-settings: "wdth" 200;
   width: 1200px;
   padding: 20px;
   background-color: black;
@@ -87,6 +86,7 @@
   position: sticky;
   top: 0;
   background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
   }
   
   ul {
@@ -120,7 +120,7 @@
   
   img {
     width: 100%;
-      border-radius: 25px;
+    border-radius: 25px;
   }
   
  .fade:hover {
@@ -128,25 +128,33 @@
   transition-duration: 0.2s;
   }
   
-  
   .container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 30% 30% 30%;
   background-color: black;
-  padding: 15px;
-  
+  position: relative;
   }
   .container div {
   background-color: white;
   width: auto;
   height: auto;
   margin: 15px;
-  position: relative;
   text-align: center;
   border-radius: 30px;
+  position: relative;
+  overflow: hidden;
   }
   
-  
+  .textonimage {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  }
+ 
   
 </style>
 </head>
@@ -193,12 +201,13 @@
   <div class="container">
     <div>
 <img src="mels-rebranding-mockup.jpg" alt="Mel's Diner Rebranding" class="fade">
-    <div style="color:rgb(0, 0, 0);">
-      <h2>Rebranding</h2>
-      <p>Mel's Diner</p>
+    <div class="textonimage">
+      <div class="centered">
+      <p style="font-size: 30px; text-align: center;">Rebranding</p>
+      <p style="text-align: center;">Mel's Diner</p>
+      </div>
     </div>
-
-    </div>
+  </div>
     
     <div>
 <img src="alley-cat-web-redesign.jpg" alt="Alley Cat Cafe Website Redesign" class="fade">   
