@@ -10,18 +10,14 @@
   
 <style>
   
-  div {
-  width: 1200px;
-  margin: auto;
-}  
   body {
-  font-family: "Inter";
-  font-optical-sizing: auto;
-  font-weight: 400;
-  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
   background-color: black;
   color: rgba(250, 249, 247, 1);
+  font-family: "Inter";
+  font-weight: 400;
 }
    
   h1 {
@@ -37,6 +33,8 @@
     opacity: 0.75;
     margin-top: 130px;
     height: 0px;
+    max-width: 1200px;
+    max-height: 700px;
   }
   
   div.site-title {
@@ -46,7 +44,9 @@
     text-align: center;
     top: -80px;
     font-size: 150px;
-    height: 800px;
+    height: 700px;
+    max-width: 1200px;
+    max-height: 700px;
   }
   
   
@@ -123,16 +123,31 @@
   img {
     width: 100%;
     border-radius: 25px;
+    display: block;
   }
   
   .container {
   display: grid;
   grid-template-columns: 30% 30% 30%;
+  gap: 20px; 
+/* ChatGPT sugguested to add after removing div in style
+    prompts: 
+    - how do i get rid of the excess height under the containers
+    - display: block; didn't do anything. i think its something in the containers */
   background-color: black;
-  position: relative;
   }
+  
+  .container .fade {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden; 
+  background-color: transparent;
+  margin: 0;
+  text-align: center;
+}
+  
   .container div {
-  background-color: rgba(250, 249, 247, 0); /* adjust a to see where the border is; delete before submission */
+  background-color: rgba(250, 240, 20, 0); /* adjust a to see where the border is*/
   width: auto;
   height: auto;
   margin: 15px;
@@ -142,12 +157,14 @@
   }
   
   .textonimage {
-  color: rgba(250, 250, 250, 0.5);
   position: absolute;
-  top: -40%;
+  top: -50%;
   left: 0%;
-  z-index: 1;
   text-align: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  color: rgba(250, 250, 250, 1);
+  z-index: -1;
   }
  
   .textonimage p {
@@ -155,13 +172,23 @@
   padding: 0;
   }
   
-  .fade:hover {
-  opacity: 0.5;
-  color: rgba(250, 250, 250, 1);
+  .fade:hover img{
+  opacity: 0.75;
   transition-duration: 0.2s; 
   }
+ 
+.fade:hover .textonimage {
+  z-index: 1;         
+  opacity: 1;
+/*  ChatGPT assisted, prompts used: 
+  - how do i make "rebranding" "mel's diner" only appear when the mouse hovers over the img box?
+  - can you make the text 1 opacity instead of 0.5 opacity when it is hovered
+  - how to do show the text when hovered with z-index?
+  (none of them really worked)
+  */
+  }
   
-  
+
 </style>
 </head>
   
@@ -181,40 +208,45 @@
     <img src="IMG_3268.JPG" alt="Me!">
   </div>
   
-  <div class="site-title">ANKE MOK</div>
+  <div class="site-title">ANKE MOK</div>  
   
-  <h2>  
-    Explore My Portfolio
-  </h2>
-   </div>
+  <h2>Explore My Work</h2>
+</div>
  
-  <div class="container">
-    <div class="fade">
+<div class="container">
+  <div class="fade">
 <img src="mels-rebranding-mockup.jpg" alt="Mel's Diner Rebranding">
     <div class="textonimage">
-      <div class="centered">
-      <p style="font-size: 30px; font-weight: 400; text-align: center;">Rebranding</p>
-      <p style="text-align: center;">Mel's Diner</p>
-      </div>
+    <div class="centered">
+<p style="font-size: 30px; font-weight: 400; text-align: center;">Rebranding</p>
+<p style="text-align: center;">Mel's Diner</p>
+    </div>
     </div>
   </div>
     
-    <div>
-<img src="alley-cat-web-redesign.jpg" alt="Alley Cat Cafe Website Redesign" class="fade">   
-<h2>Website Redesign</h2>
-<p>Alley Cat Cafe</p>
-    </div>
+  <div class="fade">
+<img src="alley-cat-web-redesign.jpg" alt="Alley Cat Cafe Website Redesign" class="fade">  
+      <div class="textonimage">
+      <div class="centered">
+<p style="font-size: 30px; font-weight: 400; text-align: center;">Website Redesign</p>
+<p style="text-align: center;">Alley Cat Cafe</p>
+      </div>
+      </div>
+  </div>
     
-  <div>
-
+  <div class="fade">
 <img src="app-littlejoys.jpg" alt="Little Joys App" class="fade">
-<h2>App Idea</h2>
-<p>Little Joys</p>
-    </div>
-    
-</div>
+      <div class="textonimage">
+      <div class="centered">
+<p style="font-size: 30px; font-weight: 400; text-align: center;">App Idea</p>
+<p style="text-align: center;">Little Joys</p>
+      </div>
+      </div>
+  </div>
 
-<div>
+  </div>
+
+  <div>
   <footer>
 <ul>
 <li><a href="/">Let's connect:</a></li>
